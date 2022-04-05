@@ -31,8 +31,8 @@ runs:
   steps:
     - name: Working
       env:
-        USERNAME: ${{  }}
-        PASSWORD: ${{  }}
+        USERNAME: ${{ inputs.username }}
+        PASSWORD: ${{ inputs.password }}
         DINGTALK_TOKEN: ${{ inputs.dingtalk_token }}
         SERVERCHAN_KEY: ${{ inputs.serverchan_key }}
         PUSHPLUS_TOKEN: ${{ inputs.pushplus_token }}
