@@ -222,8 +222,8 @@ def main(username, password):
 
 
 if __name__ == "__main__":
-    username = "xxxxx"
-    password = "xxxxx"
+    username = os.environ.get('USERNAME')
+    password = os.environ.get('PASSWORD')
 
     ret, msg = main(username, password)
     print(ret, msg)
